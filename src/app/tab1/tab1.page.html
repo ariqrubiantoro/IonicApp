@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Data Pegawai
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,43 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Data Pegawai</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <br>
+  <ion-item>
+    <ion-label position="stacked">Nama</ion-label>
+    <ion-input placeholder="placeholder"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label position="stacked">NIK</ion-label>
+    <ion-input placeholder="placeholder"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label>Jenis Kelamin</ion-label>
+    <ion-select value="dog">
+      <ion-select-option value="cat">Pria</ion-select-option>
+      <ion-select-option value="dog">Wanita</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label>Start Date</ion-label>
+    <ion-datetime value="1990-01-01" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+
+  <br>
+  
+  <section>
+    <ion-button size="small" color="secondary" expand="full">Submit</ion-button>
+  </section>
 </ion-content>
